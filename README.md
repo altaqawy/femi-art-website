@@ -1,32 +1,35 @@
 # Femi Art — Touch of Love
 
-An independently built, responsive Arabic/English storefront concept for Femi Art, featuring a scroll-driven 3D Orbit gallery, product catalog, inquiry basket, custom requests, and original crochet-inspired WhatsApp contact button.
+A bilingual storefront for Femi Art, showcasing handmade crochet creations, personalized gifts, and selected collections.
 
-## GitHub Pages
-
-Open **Settings → Pages → Deploy from a branch → main → /(root)** and save. Once Pages finishes deployment, the site can be opened at:
+## Website
 
 https://altaqawy.github.io/femi-art-website/
 
-The compact `index.html` loader fetches the eight files in `site-parts/` and reconstructs the self-contained V5 website. The content, including 17 product photos, is bundled in those files. Keep all eight parts in the repo when publishing.
+## Features
 
-## Crochet WhatsApp button
+- Responsive Arabic and English browsing
+- Scroll-driven 3D product gallery
+- Product collections and inquiry basket
+- Personalized order requests
+- Custom crochet-inspired contact button
 
-The custom WhatsApp badge is implemented in `whatsapp-widget.js` and loaded by the homepage. Its design resembles a yarn-stitch circle, with a recognizable WhatsApp icon in the center.
+## Hosting
 
-The brand's verified WhatsApp phone number hasn't been provided. Until it is, clicking the badge shows a contact card linking to the official Instagram account instead of sending customers to an invented number.
+The website is hosted with GitHub Pages. For branch-based deployment, select `main` and `/(root)` in **Settings → Pages**.
 
-To enable direct WhatsApp chat, edit `whatsapp-widget.js` and set:
+The `index.html` entry point loads the eight required files in `site-parts/`. Keep all eight files together when deploying.
 
-```js
-const phone = "201xxxxxxxxx";
-```
+## Contact
 
-Use the confirmed number with country code and no `+` or spaces.
+Instagram: https://www.instagram.com/femi.art.by.kholoud/
 
-## Notes
+The WhatsApp contact number must be confirmed by the brand before enabling direct chat. Once confirmed, add the international-format number (digits only) to the `phone` setting in `whatsapp-widget.js`.
 
-- This is a static HTML/CSS/JavaScript demo, not a native Framer export.
-- Prices, available stock, payment, and order processing have not been integrated. Product selections generate an inquiry for the business to confirm.
-- Confirm the brand's permission to publish product photography and customer information before commercial launch.
-- Fonts are preserved: Italiana, DM Sans, and Cairo.
+Until then, the contact button directs visitors to the brand's Instagram account.
+
+## Project notes
+
+The current website supports product inquiries. Live inventory, online checkout, and payment processing are not enabled.
+
+Website maintenance: Rawnak Agency.
